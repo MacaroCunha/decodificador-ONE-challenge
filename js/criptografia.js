@@ -24,6 +24,12 @@ document.addEventListener('DOMContentLoaded', function() {
     var btnDecodificar = document.querySelector(".btn-decodificar");
     var mensagensErro = document.querySelector(".mensagens-erro");
 
+    inputTexto.addEventListener('input', function() {
+        if (inputTexto.value.trim() === '') {
+            resultado.value = '';
+        }
+    });
+
     function codifica(texto) {
         var caracteres = texto.split("");
         caracteres.forEach(function(item, i) {

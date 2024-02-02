@@ -7,27 +7,16 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins&display=swap">
-
-  <style>
-    .attribution {
-      font-size: 11px;
-      text-align: center;
-    }
-
-    .attribution a {
-      color: hsl(228, 45%, 44%);
-    }
-  </style>
+  <script src="js/copiar.js"></script>
+  <script src="js/criptografia.js"></script>
+  <script src="js/valida.js"></script>
 </head>
 
 <body>
+
   <header>
     <div class="navbar">
-      <nav>
-        <div>
-          <img src="images/logo.png" alt="Logo da ONEDECODE." width="200" height="200" id="logo">
-        </div>
-      </nav>
+      <img src="images/logo.png" alt="Logo da ONEDECODE." width="200" height="200" id="logo">
     </div>
   </header>
 
@@ -38,37 +27,38 @@
 
   <main class="main">
     <section>
-      <textarea class="input-texto" cols="40" rows="9" placeholder="Digite seu texto"></textarea>
+      <textarea id="inputTexto" class="input-texto" cols="40" rows="9" placeholder="Digite sua mensagem"></textarea>
       <div class="informacao">
-          <ul class="mensagens-erro"></ul>
-          <div class="botoes">
-              <button type="button" class="button-style btn-codificar">Codificar</button>
-              <button type="button" class="button-style btn-decodificar">Decodificar</button>
-          </div>
+        <ul class="mensagens-erro"></ul>
+        <div class="botoes">
+          <button type="button" class="button-style btn-codificar">Codificar</button>
+          <button type="button" class="button-style btn-decodificar">Decodificar</button>
+        </div>
       </div>
-  </section>
-  
-  <section class="container">
-      <textarea class="resultado" cols="20" rows="11" placeholder=" " readonly></textarea>
+    </section>
+    <section class="container">
+      <textarea class="input-texto" cols="40" rows="9" placeholder="Não identificamos nenhuma mensagem digitada"></textarea>
       <div class="botoes">
-          <button type="button" class="button-style btn-copiar">Copiar</button>
+        <button type="button" class="button-style btn-copiar">Copiar</button>
       </div>
-  </section>
-  </section>  
+    </section>
   </main>
+
   <div class="quotes">
     <div class="container">
-        <img src="images/bg-quotes.png" alt="bg-quotes">
-        <p> Olá pessoal! Fui desafiada a participar da challenge do bootcamp da One e estou super animada em estar apresentando a vocês o decodificador que desenvolvi como resultado desse desafio.</p>
-        <div class="author">
-            <img src="images/profile-1.jpeg" alt="profile-1">
-            <div class="person">
-                <p class="name">@MacaroCunha</p>
-                <p>Estudante da (ONE) One Next Education</p>
-            </div>
+      <img src="images/bg-quotes.png" alt="bg-quotes">
+      <p> Olá pessoal! Fui desafiada a participar da challenge do bootcamp da One e estou super animada em estar
+        apresentando a vocês o decodificador que desenvolvi como resultado desse desafio.</p>
+      <div class="author">
+        <img src="images/profile-1.jpeg" alt="profile-1">
+        <div class="person">
+          <p class="name">@MacaroCunha</p>
+          <p>Estudante da (ONE) One Next Education</p>
         </div>
+      </div>
     </div>
   </div>
+
   <main>
     <div class="navbar-grid">
       <div class="links">
@@ -84,5 +74,7 @@
       </div>
     </div>
   </main>
-  
-  
+
+</body>
+
+</html>

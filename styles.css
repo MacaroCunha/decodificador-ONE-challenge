@@ -5,6 +5,14 @@ body {
     letter-spacing: 1px;
     margin: 0;
 }
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
 
 .main {
     text-align: center;
@@ -80,7 +88,6 @@ button:hover {
 button:focus {
     background-color: rgb(130, 0, 203);
 }
-
 
 
 .get-started {
@@ -282,7 +289,7 @@ button:focus {
 
 .quotes {
     display: flex;
-    justify-content: center; /* Add this line to center the container horizontally */
+    justify-content: center;
     width: 100%;
     margin: 100px auto;
 }
